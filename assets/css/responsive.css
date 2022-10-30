@@ -1,0 +1,76 @@
+/* containers sm start */
+@media(min-width: 0px) and (max-width: 767px){
+  /* header start */
+  .header-section h1{
+    font-size: 60px;
+    padding: 30px 0px;
+  }
+  .header-section h1 span:after{
+    margin: 90px 0px;
+    width: 70%;
+    left: 15%;
+  }
+  .header-section p{
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  .scroll-to-bottom{
+    padding: 100px 0px 50px 0px ;
+  }
+  /* header end */
+  /* article start */   /* article end */     /* services start */   /* services end */     /* work start */   /* work end */
+  /* contact start */
+  .contact-section h2{
+    font-size: 35px;
+  }
+  .contact-section p{
+    font-size: 14px;
+  }
+  /* contact end */
+}
+/* containers sm end */
+
+/* containers md start */
+@media(min-width: 768px) and (max-width: 991px){
+  /* header start */
+  .header-section h1{
+    font-size: 80px;
+    padding: 40px 0px;
+  }
+  .header-section h1 span:after{
+    margin: 120px 0px;
+    width: 60%;
+    left: 20%;
+  }
+  .header-section p{
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+  .scroll-to-bottom{
+    padding: 160px 0px 50px 0px ;
+  }
+  /* header end */
+  /* article start */
+  /* article end */
+}
+/* containers md end */
+
+/* containers lg start */
+@media(min-width: 992px) and (max-width: 1199px){
+  /* header start */
+  .header-section h1{
+    font-size: 100px;
+  }
+  .header-section h1 span:after{
+    margin: 150px 0px;
+    width: 50%;
+    left: 25%;
+  }
+  .scroll-to-bottom{
+    padding: 220px 0px 50px 0px ;
+  }
+  /* header end */
+  /* article start */
+  /* article end */
+}
+/* containers lg end */
