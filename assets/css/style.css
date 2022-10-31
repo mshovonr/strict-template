@@ -22,6 +22,7 @@ img{
 }
 .navbar-brand img{
   width: 70%;
+  /* padding-left: 2px; */
 }
 /* link */
 .navbar-nav .default-nav-active{
@@ -35,7 +36,7 @@ img{
   position: relative;
   font-weight: 600;
   margin: 0px 2px;
-  color: #15a4fa;
+  /* color: #15a4fa; */
 }
 .navbar-nav .nav-item .nav-link:hover{
   color: #15a4fa;
@@ -52,6 +53,14 @@ img{
 }
 .navbar-nav .nav-item .nav-link:hover::after{
   width: 100%;
+}
+.navbar-toggler{
+  color: #15a4fa;
+  transition: box-shadow .8s ease-in-out;
+  transition: .8s;
+}
+.navbar-toggler:hover{
+  background-color: #acdefc;
 }
 /* navbar end */
 /* header start */
@@ -82,10 +91,13 @@ img{
   border-radius: 0.25rem;
   border-color: var(--primary-color);
   font-size: 18px;
+  transition: .6s all;
+
 }
 .header-section .btn:hover{
   border-color: var(--primary-color);
   background-color: var(--primary-color);
+  box-shadow: 0px 10px 15px rgb(40 40 40);
 }
 .scroll-to-bottom{
   position: sticky;
@@ -119,14 +131,20 @@ img{
   background-color: #48baff;
   border-color: #48baff;
   padding: 25px 30px;
+  border-radius: 0.2rem;
+  transition: .5s all;
+  box-shadow: 0px 10px 15px rgb(40 40 40);
 }
 .service-section .btn:hover{
-  background-color: #5fc3ff;
-  border-color: #5fc3ff;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
-.service-section .icon{
-  /* width: 100%; */
-  border-radius: 0.2rem;
+.service-section a{
+  color: var(--secondary-color) !important;
+  transition: .4s;
+}
+.service-section a:hover{
+  color: var(--primary-color) !important;
 }
 .service-section h4{
   font-weight: 500;
@@ -141,45 +159,51 @@ img{
   padding-top: 25px;
   background-color: var(--secondary-color);
 }
-.works .shovon{
-  position: relative;
+.work-section h2{
+  padding: 0px 0px 2px 0px;
+  font-weight: 600;
+  font-size: 32px;
 }
-.works .shovon::after{
-  position: absolute;
-  content: "";
-  background: #fff;
-  height: 5px;
-  width: 40%;
-  top: 0;
-  right: 25px;
-}
-.work-area{
-  position: relative;
-  overflow: hidden;
+.work-section p{
+  padding: 8px 0px 30px 0px;
 }
 /* images start */
-.work-area .work-section-overlay{
-  position: absolute;
-  /* padding: 20px; */
+.work-area{
+  position: relative;
+  box-shadow: 0px 10px 15px rgb(50, 50, 50);
+}
+.work-area image{
   height: 100%;
   width: 100%;
 }
-.work-area:hover .work-section-overlay{
-  top: 0%;
+.work-area .work-section-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
   background: var(--primary-color);
-  padding: 26% 0% 0% 0%;
-  transition: opacity 0.6s ease-in-out;
   cursor: pointer;
 }
-.work-section-overlay a{
-  margin-right: 6px;
+.work-area .work-section-overlay .icon-s{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work-area:hover .work-section-overlay{
+  opacity: 0.8;
 }
 .work-section-overlay .btn-01{
   border-color: var(--secondary-color);
   border-radius: 0.2rem;
 }
 .work-section-overlay .btn-01:hover{
-  
+  color: #15a4fa !important;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 /* images end */
 /* work end */
@@ -201,10 +225,14 @@ img{
 }
 /* form start */
 .contact-section .form-control{
-  background-color: transparent !important; 
+  background: transparent !important; 
   border-color: #acacac;
+  color: var(--secondary-color);
   padding:.99rem 0.75rem;
   border-radius: 0.25rem;
+}
+.contact-section .form-control::after{
+  border-color: #48baff;
 }
 .contact-section .btn{
   border-color: var(--primary-color);
@@ -231,10 +259,13 @@ img{
   border-radius: 0.15rem;
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+  transition: .5s;
 }
 .footer-section a:hover{
-  background-color: #5fc3ff;
-  border-color: #5fc3ff;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--primary-color) !important;
+  box-shadow: 0px 5px 10px rgb(50, 50, 50);
 }
 .footer-section a.i-1{
   padding: 8px 15px;

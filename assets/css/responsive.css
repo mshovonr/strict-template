@@ -18,7 +18,12 @@
     padding: 100px 0px 50px 0px ;
   }
   /* header end */
-  /* article start */   /* article end */     /* services start */   /* services end */     /* work start */   /* work end */
+  /* article start */   /* article end */     /* services start */   /* services end */     
+  /* work start */   
+  .work-section h2{
+    font-size: 28px;
+  }
+  /* work end */
   /* contact start */
   .contact-section h2{
     font-size: 35px;
@@ -27,6 +32,14 @@
     font-size: 14px;
   }
   /* contact end */
+  /* footer start */
+  .footer-section .copyright{
+    text-align: center !important;
+  }
+  .footer-section .icons{
+    text-align: center !important;
+  }
+  /* footer end */
 }
 /* containers sm end */
 
