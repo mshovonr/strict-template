@@ -39,14 +39,14 @@ img{
   /* color: #15a4fa; */
 }
 .navbar-nav .nav-item .nav-link:hover{
-  color: #15a4fa;
+  color: var(--primary-color);
 }
 .navbar-nav .nav-item .nav-link::after{
   position: absolute;
   content: "";
   width: 0%;
   height: 3px;
-  background: #15a4fa;
+  background: var(--primary-color);
   left: 0;
   bottom: -8px;
   transition: .5s;
@@ -55,12 +55,13 @@ img{
   width: 100%;
 }
 .navbar-toggler{
-  color: #15a4fa;
+  border: 2px solid;
+  color: var(--primary-color);
   transition: box-shadow .8s ease-in-out;
-  transition: .8s;
 }
 .navbar-toggler:hover{
-  background-color: #acdefc;
+  background-color: var(--primary-color);
+  transition: .8s;
 }
 /* navbar end */
 /* header start */
@@ -132,16 +133,17 @@ img{
   border-color: #48baff;
   padding: 25px 30px;
   border-radius: 0.2rem;
-  transition: .5s all;
-  box-shadow: 0px 10px 15px rgb(40 40 40);
+  box-shadow: 0px 4px 8px rgb(66, 66, 66);
+  transition: .6s;
 }
 .service-section .btn:hover{
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
+  box-shadow: 0px 10px 15px rgb(40 40 40);
 }
 .service-section a{
   color: var(--secondary-color) !important;
-  transition: .4s;
+  transition: .5s;
 }
 .service-section a:hover{
   color: var(--primary-color) !important;
@@ -167,10 +169,14 @@ img{
 .work-section p{
   padding: 8px 0px 30px 0px;
 }
-/* images start */
+    /* images start */
 .work-area{
   position: relative;
-  box-shadow: 0px 10px 15px rgb(50, 50, 50);
+  box-shadow: 0px 5px 10px rgb(66, 66, 66);
+  transition: .4s;
+}
+.work-area:hover{
+  box-shadow: 0px 8px 15px rgb(50, 50, 50);
 }
 .work-area image{
   height: 100%;
@@ -205,7 +211,7 @@ img{
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
-/* images end */
+    /* images end */
 /* work end */
 
 /* contact start */
@@ -223,7 +229,7 @@ img{
   font-size: 15px;
   padding: 5px 0px 10px 0px;
 }
-/* form start */
+  /* form start */
 .contact-section .form-control{
   background: transparent !important; 
   border-color: #acacac;
@@ -242,7 +248,7 @@ img{
   border-color: var(--primary-color);
   background-color: var(--primary-color);
 }
-/* form end */
+  /* form end */
 /* contact end */
 
 /* footer start */
@@ -253,7 +259,7 @@ img{
   color: var(--text-color);
   font-size: 15px;
 }
-/* icons start */
+  /* icons start */
 .footer-section a{
   margin-right: 3px;
   border-radius: 0.15rem;
@@ -279,5 +285,5 @@ img{
 .footer-section a.i-4{
   padding: 8px 14px;
 }
-/* icons end */
+  /* icons end */
 /* footer end */
