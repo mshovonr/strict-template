@@ -1,4 +1,4 @@
-# Template Name   : Strict | A responsive Template  
+# Template Name   : STRICT | A responsive Template  
 # For view  : https://md-shovon-strict-template.netlify.app/  
 this template is created for general purpose only  
 HTML, CSS, Bootstrap and JavaScript are used  
